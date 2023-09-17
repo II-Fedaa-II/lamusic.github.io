@@ -1,0 +1,152 @@
+body{
+    background-color: black;
+}
+.wrapper {
+          display: table;
+          width: 100%;
+          background-color: aqua;
+          height: 1000px;
+}
+.div1, .div2 {
+    display: table-cell;
+}
+.div1{
+    background-color: rgb(6, 6, 6);
+    color: aliceblue
+    
+}
+.div2{
+    /* float:; */
+    padding-left:5px ;
+    background-color: rgb(30, 30, 30);
+}
+table{
+width: 100%;
+text-align: center;
+color: aliceblue;
+border-spacing: 20px;
+font-weight:bold ;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    width: 150px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.gallery{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(96, 97, 97);
+}
+.hi:hover{
+
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    background-color: brown;
+
+}
+p#wow{
+   cursor: pointer;
+   font-size:x-large;
+}
+img#siu{
+    width: 50px;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+li a#ww:hover{
+    background-color: transparent;
+    color: rgb(83, 3, 3);
+    cursor:default;
+}
+li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(83, 3, 3);
+    border-radius: 10px;
+}
+li#hello a:hover{
+    background-color: rgb(0, 163, 196);
+    color: rgb(83, 3, 3);
+    border-radius: 3px;
+}
+li#hiz{
+    float: right;
+   padding-top: 25px;
+   font-size: x-large;
+}
+li#hello{
+    padding-top: 25px;
+    float: right;
+    font-size: x-large;
+}
+input{
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    font-size: x-large;
+    font-family:monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+input#she{
+      color: grey;
+      background-color: transparent;
+      border-color: transparent;
+}
+input#he{
+     border-color: transparent;
+}
+a{
+    padding-top: 12px;
+}
+/* li#wwe{
+    /* width: ; */
+/* } */ 
+img#not{
+    width: 100px;
+}
+footer{
+    height:225px;
+    margin-right: 25px;
+    margin-left: 25px;
+    /*background-image:linear-gradient(green,white,red);*/
+    background-color: black;
+    color:aliceblue;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    
+}
+span{
+    font-size: xx-large;
+}
+audio::-webkit-media-controls-play-button,audio::-webkit-media-controls-mute-button{
+    background-color: rgb(88, 88, 88);
+    border-radius: 20px;
+    border-color:transparent ;
+    margin-left: 1px;
+}
+audio::-webkit-media-controls-panel{
+    background-image: url(../1images/blackout.jfif);
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/flash.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <ul>
+        <li id="wwe"><a href="#" id="ww"><img src="/static/1images/spppot.jpg" id="not"></a></li>
+        <li id="hello"><a href="{{url_for('login')}}" id="s"><input type="submit" value="Login" id="he"></a></li>
+        <!-- <li id="hiz">< id="s"><input type="submit" value="Sign up" id="she"></a></li> -->
+    </ul><br>
+    {%with messages = get_flashed_messages(category_filter=['success'])%}
+    {%if messages%}
+    <h1 id="my_message" align="center" style="color:aliceblue;">{%for message in messages%}
+        {{message}}<input type="button" value="OK" id="mybtn" onclick="btn()">
+        {%endfor%}
+    </h1>
+    {%endif%}
+    {%endwith%}
+    <audio controls  id="song">
+        <source src="#" type="audio/mpeg">
+    </audio>
+     <div class="wrapper">
+     <div class="div1">
+        <p id="wow"><img src="/static/1images/suwi.jpg" id="siu">Home</p>
+        <p id="wow"><img src="/static/1images/hehe.jpg" id="siu">Search</p>
+        <p id="wow"><img src="/static/1images/ww.jpg" id="siu">Library</p>
+        <br><br>
+        
+        <p id="wow"><img src="/static/1images/nw.jpg" id="siu">Liked Songs</p>
+     <!-- div code here -->
+     </div>
+     <div class="div2">
+        <table border="0">
+            <tr>
+                <td><div class="gallery"><div class="hi"><a><img src="/static/1images/another-love.jfif" id="/static/music/Tom_Odell_Another_Love_Official_Video_.mp3"></a>
+                <p>Another Love</p></div></div></td>
+                <td><div class="gallery">
+                    <div class="hi"><a href="#viva.html"><img src="/static/1images/Coldplay_-_Viva_la_Vida_or_Death_and_All_His_Friends.png" id="/static/music/Coldplay_Viva_La_Vida_Official_Video_.mp3"></a>
+                <p>Viva La Vida</p></div></div></td>
+                <td><div class="gallery">
+                 <div class="hi"><a href="#music.html"><img src="/static/1images/Mary-on-a-Cross-by-Ghost.jpg" id="/static/music/Ghost_Mary_On_A_Cross_Official_Audio_.mp3"></a>
+                <p>Marry On A Cross</p></div></div></td>
+                <td><div class="gallery">
+                <div class="hi"> <a href="#rollin.html"><img src="/static/1images/rollin in the deep.png" id="/static/music/Adele_Rolling_in_the_Deep_Official_Music_Video_.mp3"></a>
+                <p>Rollin In The Deep</p></div></div></td>
+                <td><div class="gallery">
+                <div class="hi"><a href="#are.html"><img src="/static/1images/are.jfif" id="/static/music/Lost_Frequencies_Are_You_With_Me_Official_Music.mp3"></a>
+                <p>Are You With Me</p></div></div></td>
+                <td><div class="gallery">
+                <div class="hi"><a href="#locked.html"><img src="/static/1images/locked-out.jfif" id="/static/music/Bruno_Mars_Locked_out_of_Heaven.mp3"></a>
+                <p>Locked Out Heaven</p></div></div></td>
+            </tr> 
+            <!-- here-->
+            <tr>
+                <td><div class="gallery"><div class="hi"><a href="#dancing.html"><img src="/static/1images/danicng.jfif" id="/static/music/Abba_Dancing_Queen_Official_Music_Video_Remaste.mp3"></a>
+                    <p>Dancing Queen</p></div></div></td>
+                    <td><div class="gallery">
+                        <div class="hi"><a href="#after.html"><img src="/static/1images/after dark.jpg" id="/static/music/After_Dark.mp3"></a>
+                    <p>After Dark</p></div></div></td>
+                    <td><div class="gallery">
+                     <div class="hi"><a href="#angeleyes.html">   <img src="/static/1images/angeleyes.jfif" id="/static/music/Angeleyes.mp3"></a>
+                    <p>Angle Eyes</p></div></div></td>
+                    <td><div class="gallery">
+                    <div class="hi"><a href="#black.html">    <img src="/static/1images/blackout.jfif" id="/static/music/PHANTOGRAM_Black_Out_Days.mp3"></a>
+                    <p>Black Out Days</p></div></div></td>
+                    <td><div class="gallery">
+                    <div class="hi"><a href="#cest.html">    <img src="/static/1images/Cest-la-vie-album-khaled.jpg" id="/static/music/Khaled_C_est_la_vie_Clip_officiel_.mp3"></a>
+                    <p>C'est La Vie</p></div></div></td>
+                    <td><div class="gallery">
+                    <div class="hi"><a href="#clean.html">    <img src="/static/1images/clean.jpg" id="/static/music/Clean_Bandit_Symphony_feat_Zara_Larsson_.mp3"></a>
+                    <p>Symphony</p></div></div></td>
+            </tr> 
+            <!-- here-->
+            <tr>
+                <td><div class="gallery"><div class="hi"><a href="#titan.html"><img src="/static/1images/titantium.jfif" id="/static/music/David_Guetta_Titanium_ft_Sia_Official_Video_.mp3"></a>
+                    <p>Titanium</p></div></div></td>
+                    <td><div class="gallery">
+                        <div class="hi"><a href="#shootout.html"><img src="/static/1images/shootout.jfif" id="/static/music/Izzamuzzic_Shootout.mp3"></a>
+                    <p>Shootout</p></div></div></td>
+                    <td><div class="gallery">
+                     <div class="hi"><a href="#danza.html">   <img src="/static/1images/danza.jfif" id="/static/music/Don_Omar_Danza_Kuduro.mp3"></a>
+                    <p>Danza Quduro</p></div></div></td>
+                    <td><div class="gallery">
+                    <div class="hi"><a href="#give.html">    <img src="/static/1images/give.jpg" id="/static/music/Pitbull_Give_Me_Everything_ft_Ne_Yo_Afrojack_.mp3"></a>
+                    <p>Give Me Everything</p></div></div></td>
+                    <td><div class="gallery">
+                    <div class="hi"><a href="#notion.html">    <img src="/static/1images/notion.png" id="/static/music/The_Rare_Occasions_Notion.mp3"></a>
+                    <p>Notion</p></div></div></td>
+                    <td><div class="gallery">
+                    <div class="hi"> <a href="#snow.html">  <img src="/static/1images/snow1.jpg" id="/static/music/øneheart_x_reidenshi_snowfall.mp3"></a>
+                    <p>Snowfall</p></div></div></td>
+            </tr> 
+        </table>
+        <footer><pre>           
+                                           <span>&#169; Spotify Privacy</span>    
+
+                  If you are 'opted out' of Tailored Ads in your Privacy Settings, you may still 
+                  get advertising.This can include on our free Service Option, as well as our paid
+                  Service Option, as applicable (for example, advertising in podcasts). This type 
+                  of advertising is based on your registration information and what you are 
+                  currently listening to on our services. For example, if you are listening
+                  to a cooking podcast, you may hear an ad for a food processor.</pre></footer>
+
+     <!-- div code here -->
+     </div>
+</div>
+<script src="/static/main.js"></script>
+<script src="../static/flash.js"></script>
+</body>
+</html>
